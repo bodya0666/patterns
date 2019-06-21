@@ -6,7 +6,7 @@ use App\abstractFactory\AbstractFactory;
 use App\abstractFactory\ConcreteFactory1;
 use App\abstractFactory\ConcreteFactory2;
 
-include 'vendor/autoload.php';
+include __DIR__ . '/vendor/autoload.php';
 
 function clientCode(AbstractFactory $factory)
 {
