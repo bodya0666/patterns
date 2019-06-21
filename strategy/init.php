@@ -1,7 +1,7 @@
 <?php
 namespace App;
 
-include 'vendor/autoload.php';
+include __DIR__ . '/vendor/autoload.php';
 
 $duck = new Duck();
 $woodenDuck = new WoodenDuck();
