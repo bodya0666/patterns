@@ -28,7 +28,7 @@ class QueryBuilder implements QueryBuilderInterface
 
     public function limit(int $start, int $offset): QueryBuilderInterface
     {
-        $this->query->limit = "LIMIT $start, $offset";
+        $this->query->limit = " LIMIT $start, $offset";
 
         return $this;
     }
