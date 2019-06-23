@@ -2,6 +2,8 @@
 
 namespace App\Creator;
 
+use App\File\File;
+
 abstract class Creator
 {
     abstract public function factoryMethod(): File;

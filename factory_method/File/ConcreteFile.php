@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Creator;
+namespace App\File;
 
 class ConcreteFile implements File
 {
