@@ -18,11 +18,9 @@ class SimplePage extends Page
 
     public function view(): string
     {
-        $this->renderer->renderParts([
-            $this->renderer->renderHeader(),
+        return $this->renderer->renderParts([
             $this->renderer->renderTitle($this->title),
             $this->renderer->renderContent($this->content),
-            $this->renderer->renderFooter()
         ]);
     }
 }

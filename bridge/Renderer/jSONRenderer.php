@@ -38,6 +38,6 @@ class jSONRenderer implements RendererInterface
 
     public function renderParts(array $parts): string
     {
-        return implode(",\n", $parts);
+        return $this->renderHeader() . implode(",\n", $parts) . $this->renderFooter();
     }
 }
