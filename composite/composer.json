@@ -1,0 +1,15 @@
+{
+    "name": "zik/composite",
+    "authors": [
+        {
+            "name": "bodya0666",
+            "email": "maximchuk.bodya@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "App\\": ""
+        }
+    }
+}
