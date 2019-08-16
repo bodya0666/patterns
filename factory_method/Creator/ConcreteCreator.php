@@ -1,9 +1,9 @@
 <?php
 
-
 namespace App\Creator;
 
 use App\File\File;
+use App\File\ConcreteFile;
 
 class ConcreteCreator extends Creator
 {
