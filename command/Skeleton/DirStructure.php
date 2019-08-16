@@ -4,7 +4,7 @@ namespace App\Skeleton;
 
 class DirStructure extends Dir
 {
-    public function createStructure()
+    public function createStructure(): void
     {
         $i = null;
 
@@ -21,10 +21,5 @@ class DirStructure extends Dir
             mkdir($this->getBaseDir() . '/' . $dir);
         }
         $this->setGenerateStatus(true);
-    }
-
-    public function getStructure()
-    {
-        return clone $this;
     }
 }

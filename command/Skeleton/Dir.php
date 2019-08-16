@@ -16,6 +16,8 @@ abstract class Dir
 
     protected $public = 'public';
 
+    abstract public function createStructure(): void;
+
     public function getGenerateStatus(): bool
     {
         return $this->generateStatus;

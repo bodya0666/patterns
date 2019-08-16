@@ -2,14 +2,12 @@
 
 namespace App;
 
+use App\Command\CreateStructureCommand;
 use App\Skeleton\DirStructure;
-use App\Skeleton\FileStructure;
 
 include __DIR__ . '/vendor/autoload.php';
 
+$dir = new DirStructure();
+$command = new CreateStructureCommand($dir);
 
-$test = new DirStructure();
-
-$file = new FileStructure($test);
-
-//$test->createStructure();
+$command->execute();
