@@ -9,7 +9,7 @@ abstract class AbstractParser
      */
     protected $url;
 
-    protected $data;
+    protected $data = null;
 
     protected $search;
 
