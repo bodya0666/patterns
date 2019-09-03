@@ -27,7 +27,7 @@ class Mediator implements MediatorInterface
 
     public function sendResponse($content)
     {
-        $this->client->render($content);
+        return $this->client->render($content);
     }
 
     public function queryDB()
@@ -37,6 +37,6 @@ class Mediator implements MediatorInterface
 
     public function makeRequest()
     {
-        $this->server->process();
+        return $this->server->process();
     }
 }

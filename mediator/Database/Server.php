@@ -8,6 +8,6 @@ class Server extends Colleague
 {
     public function process()
     {
-        
+        return $this->mediator->sendResponse($this->mediator->queryDB());
     }
 }
